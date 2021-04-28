@@ -11,7 +11,7 @@
   * [5.bug分支](#font-size4--5bug分支-font)
   * [6.多人协作](#font-size4--6多人协作-font)
   * [7.rebase操作](#font-size4--7rebase操作-font)
-  * [8.merge操作]()
+  * [8.merge操作](#font-size4--8merge操作-font)
   
 ## 一、分支管理
  分支就是从主线分出来的支线，但这个支线又不影响主线，最后支线完成任务后合并到主线上然后删除支线。  
