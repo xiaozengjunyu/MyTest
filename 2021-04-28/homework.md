@@ -9,7 +9,11 @@
 
 ## 关于主题
 
-今天 git 知识都看完，尝试看一下 [VuePress](https://vuepress.vuejs.org/)
+今天 git 知识如果有看完，尝试看一下 [VuePress](https://vuepress.vuejs.org/)
 
 * 项目迁移到 VuePress
 * 试试使用 GitPage
+
+## 关于 Git
+
+今天 git 知识如果有看完，尝试研究一下 git 怎么在一个机器上做到 使用多个 私钥。
