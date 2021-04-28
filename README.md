@@ -1,2 +1,0 @@
-# MyTest
-MyTest src
