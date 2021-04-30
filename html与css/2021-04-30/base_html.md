@@ -116,4 +116,4 @@
  * 1999 年对于 HTML4进行某些方面的修补
  * 2001 年发布了 XHTML1.0 相比 HTML 更为严格标准，但 HTML 相对灵活性更高，开发人员更想把时间放在 Web 页面，而不是严谨的文档
  * 2009 年发布了 HTML5 版本，对 HTML 标准进行修订并增加了一些新特性
-  * HTML5 = HTML + CSS3 +JavaScript +API
+  * HTML5 ≈ HTML + CSS3 +JavaScript + API
