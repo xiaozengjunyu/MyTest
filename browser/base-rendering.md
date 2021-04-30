@@ -11,11 +11,11 @@
 
 ## 一、浏览器基本原理
 ### 1.（浏览器内核的组成）  
-  浏览器的内核是支持浏览器运行最核心的程序,分为渲染引擎和js引擎两个部分组成
- * 渲染引擎：负责取得网页（hltml、xml、images）的内容
- * js引擎 ：js是单线程语言，js引擎就是浏览器附带专门处理js脚本的虚拟机  
+  浏览器的内核是支持浏览器运行最核心的程序,分为渲染引擎和 JS引擎两个部分组成
+ * 渲染引擎：负责取得网页（HTML 、XML、IMAGES）的内容
+ * JS引擎 ：JavaScript 是单线程语言，js 引擎就是浏览器附带专门处理 JavaScript 脚本的虚拟机  
 
-  常见的浏览器内核可以分为四种:Trident（IE）、Gecko（火狐）、Blink（Chrome、Opera）、Webkit（Safari）
+  常见的浏览器内核可以分为四种: Trident（IE）、Gecko（火狐）、Blink（Chrome、Opera）、Webkit（Safari）
 ### 2.（页面加载过程）
   浏览器下载的顺序从上至下，渲染的顺序也是一样，渲染和下载是同时进行的，我们先来介绍加载过程  
 
@@ -26,13 +26,13 @@
   
 ### 3.（页面渲染过程）
 浏览器渲染过程会解析三个东西
- * 浏览器将HTML/SVG/XHTML解析成树形的数据结构
- * 浏览器将CSS解析成规则树
- * 浏览器加载js脚本
+ * 浏览器将 HTML / SVG / XHTML解析成树形的数据结构
+ * 浏览器将 CSS 解析成规则树
+ * 浏览器加载 JavaScript 脚本
 
-浏览器解析完成后通过DOM Tree 和 CSS Rule Tree 来构造 Rendering Tree 然后再遍历树
+浏览器解析完成后通过 DOM Tree 和 CSS Rule Tree 来构造 Rendering Tree 然后再遍历树
 ## 二、小思考
- * 明白了浏览器的原理，该怎么样提高HTML加载速度.
- * 执行javascript脚步完成时，又重新调用了css改变html样式会重新渲染从头再来一遍还是？
+ * 明白了浏览器的原理，该怎么样提高 HTML 加载速度.
+ * 执行 JavaScript 脚步完成时，又重新调用了css 改变 html 样式会重新渲染从头再来一遍还是？
 
 
