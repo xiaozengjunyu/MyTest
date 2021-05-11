@@ -58,9 +58,52 @@
  * 101：Switching Protocols 服务器根据客户端的请求切换协议，只可低改高
   
 #### 2xx 状态码
- * 200：ok，请求成功
- * 201：Created 成功请求并创建了新的资源
- * 202：Accepted 已经接受请求，并未处理完成
- * 203：Non-Authoritative Information 请求成功，但返回的meta信息不在原始的服务器，而是一个副本
+ * 200：ok 请求成功。
+ * 201：Created 已创建。成功请求并创建了新的资源。
+ * 202：Accepted 已接受。已经接受请求，并未处理完成。
+ * 203：Non-Authoritative Information 请求成功。但返回的 meta 信息不在原始的服务器，而是一个副本
+ * 204：No Content 无内容。服务器成功处理，但未返回内容。
+ * 205：Reset Content 重置内容。服务器处理成功，终端重新加载文档视图。
+ * 206：Partial Content 部分内容。服务器已经处理部分 GET 请求。
+
+#### 3xx 状态码
+* 300：Multiple Choices	多种选择。请求资源可包括多个，相应返回一个资源特征与地址的列表用于终端选择。
+* 301：Moved Permanently 永久移动。请求资源永久移动新到 URL，浏览器自动重定向。
+* 302：Found 临时移动。资源被临时移动，客户端继续使用原有 URL 。
+* 303：See Other	查看其它地址。使用 GET、PUST 请求查看。
+* 304：Not Modified 未修改。请求报文首页包含条件，不满足条件则返回 304 状态码。
+* 305：Use Proxy：使用代理。所请求的资源必须通过代理访问。
+* 307：Temporary Redirect	临时重定向。使用 GET 重定向。
+
+#### 4xx 状态码
+* 400：Bad Request 服务端请求的语法错误。
+* 401：Unauthorized 请求需要认证信息。
+* 402：Payment Required	保留将来使用。
+* 403：Forbidden 服务器理解客户端请求，但是拒绝执行。
+* 404：Not Found 无法通过请求查找到资源。
+* 405：Method Not Allowed 客户端请求中的方法被禁止。
+* 406：Not Acceptable 服务器无法通过客户端请求的内容特性完成请求。
+* 407：Proxy Authentication Required 请求要求代理的身份认证。 
+* 408：Request Time-out 服务器等待客户端发生请求超时。
+* 409：Conflict 服务器完成客户端的 PUT 请求时可能返回此代码，服务器处理请求时发生了冲突。
+* 410：Gone 客户端请求的资源已经不存在。如果资源以前有现在被永久删除了可使用410代码，然后通过301代码指定资源的新位置。
+* 411：Length Required 服务器无法处理客户端发送的不带 Content-Length （HTTP 消息长度）的请求信息。
+* 412：Precondition Failed	客户端请求信息的先决条件错误。
+* 413：Request Entity Too Large 由于请求的实体过大，服务器无法处理，因此拒绝请求。
+* 414：Request-URI Too Large 请求的 URL 过长。
+* 415：Unsupported Media Type 服务器无法处理请求附带的媒体格式。
+* 416：Requested range not satisfiable 客户端请求的范围无效。
+* 417：Expectation Failed 服务器无法满足Expect的请求头信息
+
+#### 5XX 状态码
+* 500：Internal Server Error 服务器正在执行请求时发生错误。
+* 501：Not Implemented 服务器不支持请求的功能。
+* 502：Bad Gateway 作为网关或者代理工作的服务器尝试执行请求时，从远程服务器接收到了一个无效的响应。
+* 503：Service Unavailable 服务器处于超负荷停机维护状态，无法处理请求。
+* 504：Gateway Time-out	充当网关或代理的服务器，未及时从远端服务器获取请求。
+* 505：HTTP Version not supported 服务器不支持请求的版本。
+
+
+
 
 
