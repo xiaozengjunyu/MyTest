@@ -1,10 +1,23 @@
 # HTTP
  * HTTP
-   *  一、基础概念
-      *  1.（HTTP 请求报文格式）
-      *  2.（HTTP 响应报文格式）
-   * HTTP 方法
-   * GET
+   *  [一、基础概念](#一基础概念)
+      * [1.HTTP 请求报文格式](#1http-请求报文格式)
+      * [2.HTTP 响应报文格式]()
+   * [HTTP 方法](#http-方法)
+     * [GET](#get)
+     * [POST](#post) 
+     * [PUT](#put) 
+     * [PATCH](#patch) 
+     * [DELETE](#delete) 
+     * [HEAD](#head) 
+     * [OPTIONS](#options) 
+     * [TRACE](#trace) 
+   * [HTTP 状态码](#http-状态码)
+     * [1XX 状态码](#1xx-状态码) 
+     * [2XX 状态码](#2xx-状态码) 
+     * [3XX 状态码](#3xx-状态码) 
+     * [4XX 状态码](#4xx-状态码) 
+     * [5xx 状态码](#5xx-状态码)
 
 ## 一、基础概念 
 
@@ -14,7 +27,20 @@
  #### 1.1（请求行）
  请求行分为三个部分：请求方法、请求地址、协议及版本。  
  HTTP 定义的请求方法有八种：GET、POST、PUT、DELETE、PATCH、HEAD、OPTLONS、TRACE最为常见的为 GET、POST。  
+
  <img src=./前端性能优化小知识/images/02.jpg   width="80%"></img>
+
+### 2.HTTP 响应报文格式
+HTTP 的响应报文分为三个部分：响应行、响应头、响应体
+
+#### 2.1(响应行)
+响应行一般由协议版本、状态码及其描述组成。  
+
+<img src=./前端性能优化小知识/images/03.jpg   width="80%"></img>
+#### 2.2(响应头)
+响应头用于描述服务器的基本信息，以及数据的描述，服务器通过这些数据的描述信息，可以通知客户端如何处理等一会儿它回送的数据。  
+
+
 
 ## HTTP 方法
 
@@ -53,11 +79,11 @@
 | 4XX | Client Error（客户端错误状态码） | 服务器无法处理请求 |
 | 5XX | Server Error（服务器错误状态码） | 服务器处理请求出错 |
  
-#### 1XX 状态码
+### 1XX 状态码
  * 100：Continue 表明到现在为止都正常，客户端可继续发送请求
  * 101：Switching Protocols 服务器根据客户端的请求切换协议，只可低改高
   
-#### 2xx 状态码
+### 2xx 状态码
  * 200：ok 请求成功。
  * 201：Created 已创建。成功请求并创建了新的资源。
  * 202：Accepted 已接受。已经接受请求，并未处理完成。
@@ -66,7 +92,7 @@
  * 205：Reset Content 重置内容。服务器处理成功，终端重新加载文档视图。
  * 206：Partial Content 部分内容。服务器已经处理部分 GET 请求。
 
-#### 3xx 状态码
+### 3xx 状态码
 * 300：Multiple Choices	多种选择。请求资源可包括多个，相应返回一个资源特征与地址的列表用于终端选择。
 * 301：Moved Permanently 永久移动。请求资源永久移动新到 URL，浏览器自动重定向。
 * 302：Found 临时移动。资源被临时移动，客户端继续使用原有 URL 。
@@ -75,7 +101,7 @@
 * 305：Use Proxy：使用代理。所请求的资源必须通过代理访问。
 * 307：Temporary Redirect	临时重定向。使用 GET 重定向。
 
-#### 4xx 状态码
+### 4xx 状态码
 * 400：Bad Request 服务端请求的语法错误。
 * 401：Unauthorized 请求需要认证信息。
 * 402：Payment Required	保留将来使用。
@@ -95,7 +121,7 @@
 * 416：Requested range not satisfiable 客户端请求的范围无效。
 * 417：Expectation Failed 服务器无法满足Expect的请求头信息
 
-#### 5XX 状态码
+### 5XX 状态码
 * 500：Internal Server Error 服务器正在执行请求时发生错误。
 * 501：Not Implemented 服务器不支持请求的功能。
 * 502：Bad Gateway 作为网关或者代理工作的服务器尝试执行请求时，从远程服务器接收到了一个无效的响应。
@@ -106,4 +132,6 @@
 
 
 
-
+区别
+Form data 
+Query
