@@ -28,7 +28,7 @@
  请求行分为三个部分：请求方法、请求地址、协议及版本。  
  HTTP 定义的请求方法有八种：GET、POST、PUT、DELETE、PATCH、HEAD、OPTLONS、TRACE最为常见的为 GET、POST。  
 
- <img src=./前端性能优化小知识/images/02.jpg   width="80%"></img>
+ <img src=./images/02.jpg   width="80%"></img>
 
 ### 2.HTTP 响应报文格式
 HTTP 的响应报文分为三个部分：响应行、响应头、响应体
@@ -36,7 +36,7 @@ HTTP 的响应报文分为三个部分：响应行、响应头、响应体
 #### 2.1(响应行)
 响应行一般由协议版本、状态码及其描述组成。  
 
-<img src=./前端性能优化小知识/images/03.jpg   width="80%"></img>
+<img src=./images/03.jpg   width="80%"></img>
 #### 2.2(响应头)
 响应头用于描述服务器的基本信息，以及数据的描述，服务器通过这些数据的描述信息，可以通知客户端如何处理等一会儿它回送的数据。  
 
