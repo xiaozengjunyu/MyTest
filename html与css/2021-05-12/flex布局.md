@@ -1,8 +1,5 @@
 # Flex 布局
 
-## [一、什么是 Flex 布局？]()
-
-
 ## 一、什么是 Flex 布局？
 
 Flex 布局就是 Flexible Box 的缩写，意为 " 弹性布局 "，用来为盒状模型提供最大的灵活性。
@@ -65,6 +62,10 @@ flex-wrap 属性控制项目是否换行及如何换行，该属性有三个值
 * flex-wrap: wrap 换行，第一行在上方。
 * flex-wrap: wrap-reverse 换行，第一行在下方。
 
+效果如下图：
+
+<img src="./images/11.jpg" width="55%" > </img>
+
 ### 3.3（ flex-flow 属性 )
 
 flex-flow 属性是 flex-direction 属性和 flex-wrap 属性的简写方式。默认值为 row nowrap。
@@ -107,3 +108,4 @@ justify-content 属性决定项目在主轴的对齐方式，该属性有五个�
 
 #### 注意点：
 当父容器的宽度或者高度不够的时候，每一个项目会相应收缩宽高，如果设置了宽高，项目自缩小扔无法被父容器包裹，那么按照排列顺序终点方向超出容器。
+
