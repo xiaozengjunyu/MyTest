@@ -4,47 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Document</title>
-
-    <style>
-        .box{
-            width: 600px;
-            height: 400px;
-            background-image: url(images/1.jpg);
-            background-repeat:no-repeat;
-        }
-
-    </style>
-
-    <script>
-        var obj1 = new Object();
-        obj1.name = 'asd';
-        var obj2 = obj1;
-        obj1.name = 'null';
-        console.log(obj1.name);
-        console.log(obj2.name);
-    </script>
-
 </head>
 <body>
-    <h1>Snapshots</h1>
-    <ul>
-        <li>
-            <a href="images/1.jpg" title="">Fireworks</a>
-        </li>
-        <li>
-            <a href="images/2.jpg" title="">Coffee</a>
-        </li>
-        <li>
-            <a href="images/2.jpg" title="">Rose</a>
-        </li>
-        <li>
-            <a href="images/1.jpg" title="">Big Ben</a>
-        </li>
-    </ul>
-
-    <div class="box">
+        <p id="box">Hello Word</p>
+    <script>
         
-    </div>
-
+        alert(document.getElementsByTagName("p").length);
+    </script>
 </body>
 </html>
