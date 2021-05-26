@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Image</title>
+
+</head>
+<body >
+    <h1>你好世界</h1>
+    <ul>
+        <li>
+            <a href="images/1.jpg"  title="你好世界-十年前" onclick="Xiaoyu(this);return false" >十年前</a>
+        </li>
+        <li>
+            <a href="images/2.jpg" title="你好世界-我们" onclick="Xiaoyu(this);return false">我们</a>
+        </li>
+        <li>
+            <a href="images/3.jpg" title="你好世界-喜欢读书" onclick="Xiaoyu(this);return false">喜欢科幻，喜欢读书</a>
+        </li>
+        <li>
+            <a href="images/4.jpg" title="你好世界-喜欢你" onclick="Xiaoyu(this);return false">喜欢你</a>
+        </li>
+    </ul>
+    <div class="box">
+           <img src="" id="TestImg" alt="">
+           <p id="p1"  >这是个好看的动漫电影</p>
+    </div>
+    
+    <script>
+
+        function Xiaoyu(myLive){
+            var a = document.getElementById("TestImg");
+            var b = myLive.getAttribute("href");
+            a.setAttribute("src",b);
+            var c  = document.getElementById("p1");
+            var d = myLive.getAttribute("title");
+            c.firstChild.nodeValue = d;
+        }
+        window.onload = function counbody(){
+            var body_element = document.getElementsByTagName("body")[0];
+            alert(body_element.childNodes.length);
+            
+        }
+
+    </script>
+
+</body>
+</html>

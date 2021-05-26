@@ -96,7 +96,7 @@ DOM 的原子是元素节点，标签的名字叫就是元素的名字，每个�
 ### （2.getElementsByTagName 方法）
 getElementsByTagName 方法返回的是一个对象数组，参数值是标签的名字
 
-```
+```javascript
     alert(document.getElementsByTagName("p").length);
 ```
 让我们来看看效果  
