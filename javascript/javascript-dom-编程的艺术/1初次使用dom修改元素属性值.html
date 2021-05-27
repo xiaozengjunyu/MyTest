@@ -23,16 +23,16 @@
         </li>
     </ul>
     <div class="box">
-           <img src="" id="TestImg" alt="">
+           <img src="" id="placeholder" alt="">
            <p id="p1"  >这是个好看的动漫电影</p>
     </div>
     
     <script>
 
         function Xiaoyu(myLive){
-            var a = document.getElementById("TestImg");
-            var b = myLive.getAttribute("href");
-            a.setAttribute("src",b);
+            var placeholder = document.getElementById("placeholder");
+            var source = myLive.getAttribute("href");
+            placeholder.setAttribute("src",source);
             var c  = document.getElementById("p1");
             var d = myLive.getAttribute("title");
             c.firstChild.nodeValue = d;

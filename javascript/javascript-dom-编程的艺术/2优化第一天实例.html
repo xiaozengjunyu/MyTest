@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Image</title>
+
+    <style>
+        #imagegallery li{
+            display: inline;
+        }
+
+    </style>
+
+</head>
+<body >
+<h1>你好世界</h1>
+<ul id="imagegallery">
+    <li>
+        <a href="images/1.jpg"  title="你好世界-十年前"   onclick="Xiaoyu(this); return false" >十年前</a>
+    </li>
+    <li>
+        <a href="images/2.jpg" title="你好世界-我们"  onclick="Xiaoyu(this); return false" >我们</a>
+    </li>
+    <li>
+        <a href="images/3.jpg" title="你好世界-喜欢读书"  onclick="Xiaoyu(this); return false" >喜欢科幻，喜欢读书</a>
+    </li>
+    <li>
+        <a href="images/4.jpg" title="你好世界-喜欢你"  onclick="Xiaoyu(this); return false" >喜欢你</a>
+    </li>
+</ul>
+
+    <img src="images/1.jpg" id="placeholder" alt="">
+    <p id="description"  >这是个好看的动漫电影</p>
+
+
+<script>
+function Xiaoyu(myLive){
+    if(!document.getElementById("placeholder")) return false;
+    var placeholder = document.getElementById("placeholder");
+    var source = myLive.getAttribute("href");
+    if(placeholder.nodeName != "IMG") return false;
+    placeholder.setAttribute("src",source);
+    
+    if(document.getElementById("description")){ 
+    var description  = document.getElementById("description");
+    var text = myLive.getAttribute("title") ? myLive.getAttribute("title") : "" ;
+    if(description.firstChild.nodeType ==3){
+            description.firstChild.nodeValue = text;
+      }
+    }
+    return true;
+}
+
+window.onload = function(){
+    prepareGallery();
+}
+
+function prepareGallery(){
+    if(!document.getElementsByTagName || !document.getElementById) return false;
+    if(!document.getElementById("imagegallery")) return false;
+
+    var a = document.getElementById("imagegallery").getElementsByTagName("a");
+    for( var i = 0; i < a.length; i++ ){
+        a[i].onclick == function(){
+            return Xiaoyu(this) ? false : true;
+        }
+    }
+}
+
+function addLoadEvent(func){
+    var oldonload = window.onload;
+    if(typeof window.onload != 'function' ){
+        window.onload = func;
+    }else {
+        window.onload = function(){
+            oldonload();
+            func();
+        }
+    }
+}
+
+</script>
+</body>
+</html>

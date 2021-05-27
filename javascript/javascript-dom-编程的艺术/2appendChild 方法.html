@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="myList"><li>Coffee</li><li>Tea</li></ul>
+    <p id="demo">单击按钮将项目添加到列表中</p>
+    <button onclick="myFunction()">点我</button>
+    
+    <script>
+        function myFunction(){
+            //创建一个节点
+            var a = document.createElement("LI");
+            //创建一个文本节点
+            var b = document.createTextNode("点我啊");
+            //将文本节点添加到 a 节点中
+            a.appendChild(b);
+            //最后将节点添加到列表中
+            document.getElementById("myList").appendChild(a);
+        }
+
+    </script>
+</body>
+</html>

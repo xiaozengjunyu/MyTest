@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>test</title>
+</head>
+<body>
+
+    <p id = "demo" > 单击按钮创建button元素 </p>
+    <button onclick = "Myfunction()" > 点击 </button>
+<script>
+     function Myfunction(){
+         //创建一个节点
+        var a = document.createElement("BUTTON");
+         //创建一个文本节点
+        var b = document.createTextNode("text dom");
+        //将文本节点添加到 a 节点中
+        a.appendChild(b);
+        //最后将节点添加到文档末尾
+        document.body.appendChild(a);
+     }
+    
+</script>
+</body>
+</html>

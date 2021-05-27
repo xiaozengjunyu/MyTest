@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="myList"><li>Coffee</li><li>Tea</li></ul>
+    <p id="demo">单击按钮将元素添加到列表头</p>
+    <button onclick="myFunction()">点我</button>
+
+    <script>
+
+        function myFunction(){
+            var a = document.createElement("LI");
+            var b = document.createTextNode("我在后面了");
+            a.appendChild(b);
+            var list = document.getElementById("myList");
+            list.insertAfter(a,list.childNodes[1]);
+        }
+    
+    </script>
+</body>
+</html>
