@@ -10,12 +10,9 @@ appendChild() 方法可向节点的子节点列表的末尾添加新的子节点
 
 ## createTextNode 方法 
 createTextNode() 可创建文本节点。   
-具体实例：[createTextNode 方法]()
+具体实例：[createTextNode 方法](./2createTextNode.html)
 
 ## inserBefore() 方法
 inserBefore() 方法可在现有的元素前面插入一个新元素。   
-具体实例：[insertBefore 方法]()
+具体实例：[insertBefore 方法](./2insertBefore%20方法.html)
 
-## insertAfter 方法
-inserBefore() 方法可在现有的元素后面插入一个新元素。 
-具体实例：[insertAfter 方法]()
