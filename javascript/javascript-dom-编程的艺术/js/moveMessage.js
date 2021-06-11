@@ -1,4 +1,5 @@
 function moveMessage(){
+    if( !document.getElementById) return false;
     if( !document.getElementById("message") )return false;
     var elem = document.getElementById("message");
     var xpos = parseInt (elem.style.left);
@@ -22,7 +23,5 @@ function moveMessage(){
     }
     elem.style.left = xpos + "px";
     elem.style.top = ypos +"px";
-
     movement = setTimeout( "moveMessage()", 10);
-
 }
