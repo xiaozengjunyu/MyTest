@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击按钮</title>
+
+</head>
+<body style="background: black;">
+<button id="btu">开灯</button>
+<script>
+    let btu = document.getElementById("btu");
+    let body = document.body;
+
+    btu.onclick = function(){
+        var bg = body.style.background;
+        console.log(body);
+        if(bg == "black"){
+            body.style.background = "pink";
+            btu.innerText="关灯";
+        }else{
+            body.style.backgroundColor= "black";
+            btu.innerText="开灯";
+        }
+    }    
+
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>石头剪刀布</title>
+
+    <script>
+
+        function bca(nice){
+            var sj = document.getElementById("suiji");
+            var i = parseInt(Math.random() * 3 + 1);
+            document.getElementById("ino").innerHTML = "你选择出的是："+nice;
+            if( i == 1 ) {
+                sj.innerHTML = "剪刀";
+            }else if(i == 2){
+                sj.innerHTML = "石头";
+            }else if( i == 3){
+                sj.innerHTML = "布";
+            }
+            switch(nice){
+                case '石头' : 
+                    if( i == 1 ) {sj.innerHTML = '系统出的是：剪刀，你赢了';break;}
+                    else if(i == 3) {
+                        sj.innerHTML = '系统出的：是布，你输了';
+                        break;
+                    }else{
+                        sj.innerHTML = '系统出的是：石头，你们平局';
+                        break;
+                    }
+
+                    case '剪刀' : 
+                    if(i == 1 ) {sj.innerHTML = '系统出的是：剪刀，你们平局了';break;}
+                    else if(i == 3) {
+                        sj.innerHTML = '系统出的：是布，你赢了';break;
+                    }else{
+                        sj.innerHTML = '系统出的是：石头，你输';break;
+                    }
+
+                    case '布' : 
+                    if(i == 3 ) {sj.innerHTML = '系统出的：是布，你们平局';break;}
+                    else if(i == 2) {
+                        sj.innerHTML = '系统出的是：石头，你赢了';break;
+                    }else{
+                        sj.innerHTML = '系统出的是：剪刀，你输了';break;
+                    }
+
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <p id="ino">你选择出的是：</p>
+    <button id="st" onclick="bca(this.innerHTML)">石头</button>
+    <button id="jd" onclick="bca(this.innerHTML)">剪刀</button>
+    <button id="b" onclick="bca(this.innerHTML)">布</button>
+    <p id="suiji">系统出的是：</p>
+</body>
+</html>

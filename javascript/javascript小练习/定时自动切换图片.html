@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片自动切换</title>
+    <script>
+        
+        window.onload = function(){
+            var arr = ["images/01.jpg","images/02.jpg","images/03.jpg","images/04.jpg"];
+            var i = 0;
+            var box = document.getElementById("box");
+           
+            function time() {
+                i++;  
+                i=i%4;   
+                box.style.background = "url("+arr[i]+")";
+            }
+            setInterval(time,3000);
+        }
+       
+    </script>
+</head>
+<body>
+    <div id="box" style="height: 315px; width: 500px;background: url(images/01.jpg);" >
+    </div>
+</body>
+</html>

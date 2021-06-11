@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+<style>
+
+    .box div {
+                position: absolute;
+                border-radius: 50%;
+            }
+
+</style>
+
+<script>
+      var box = document.getElementsByClassName("box")[0]; 
+      var div = document.createElement("div");
+      var num = 0; 
+      var time = setInterval(xy,100);
+    //给小球生成随机颜色
+    function rgb(){
+        var r = Math.floor(Math.random() *256);
+        var g = Math.floor(Math.random() *256);
+        var b = Math.floor(Math.random() *256);
+        var rgb = "rgba("+r+","+g+","+b+")";
+        return rgb;
+    }
+
+
+    function xy(){
+            var div = document.createElement("div");
+            //生成小球
+            var wh = Math.floor(Math.random() * 40);
+            div.style.width = wh + 'px';
+            div.style.height = wh + 'px';
+    
+            //小球的位置
+            div.style.left = Math.floor(Math.random() * 2000 - 1 ) + 'px';
+            div.style.top  = Math.floor(Math.random() * 2000 - 1 ) + 'px';
+            //小球的颜色
+            div.style.backgroundColor = rgb();
+            //将小球添加
+            box.appendChild(div);
+            num++;
+            if(num > 99){
+                clearInterval(time);
+            }
+}
+
+</script>
+
+</body>
+</html>

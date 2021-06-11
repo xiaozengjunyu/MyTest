@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>银行利息</title>
+
+    <script>
+     
+        function set_result(book_sum,book_xi,book_sumxi){
+
+            var interest = setById("start");
+            var year_money  = setById("year_money");
+            var year = setById("year");
+            var year_sum = 0;
+            book_xi = 0;
+            book_sum = interest;
+            for(var i = 1 ; i<=year ;i++){
+                
+                book_xi += (interest + book_xi + year_sum) * (year_money / 100);
+                year_sum = setById("year_sum");
+                if( i == 1){
+                    book_sum +=  year_sum;
+                }
+            }
+            book_sumxi = book_sum + book_xi;
+
+            document.getElementById("sum").value = book_sum;
+            document.getElementById("sum_xi").value = book_xi;
+            document.getElementById("sumxi").value = book_sumxi;
+
+        }
+
+        function setById(id){
+            return id = parseFloat(document.getElementById(id).value);
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <table border="1"> 
+
+        <tr>
+            <td>启动资金</td>
+            <td><input type="text" value="1000" id="start"> ￥</td>
+
+        </tr>
+        <tr>
+            <td>每年收益</td>
+            <td><input type="text"  value="10" id="year_money"> %</td>
+        </tr>
+        <tr>
+            <td>复利年数</td>
+            <td><input type="text" value="2" id="year"> 年</td>
+        </tr>
+        <tr>
+            <td>每年追加资金</td>
+            <td><input type="text" value="1000" id="year_sum"> ￥</td>
+        </tr>
+
+        <tr>
+            <td colspan="2" align="center" ><button type="button" onclick="set_result()" >计算</button></td>
+        </tr>
+        
+        <tr>
+            <td>本金和</td>
+            <td><input type="text" value="0" id="sum"> ￥</td>
+
+        </tr>
+        <tr>
+            <td>利息和</td>
+            <td><input type="text" value="0" id="sum_xi"> ￥</td>
+        </tr>
+        <tr>
+            <td>本息和</td>
+            <td><input type="text" value="0" id="sumxi"> ￥</td>
+        </tr>
+
+    </table>
+</body>
+</html>

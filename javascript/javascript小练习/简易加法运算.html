@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>简易加法运算</title>
+    
+    <script>
+        function Sum(){
+           
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            if( !num1 || !num2 ){
+                alert("请输入要运算的数");return false;
+            } 
+             num1 = parseFloat(num1);
+             num2 = parseFloat(num2);
+            var result = num1 + num2;
+            document.getElementById("result").value = result;
+      
+        }
+    </script>
+
+</head>
+<body>
+    
+    <input type="text" value="" id="num1">
+    +
+    <input type="text" value="" id="num2">
+    =
+    <input type="text" value="" id="result">
+    
+    <button type="button" onclick="Sum()">运算</button>
+
+
+</body>
+</html>

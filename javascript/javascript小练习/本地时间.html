@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模拟时间</title>
+</head>
+<body>
+
+    <script>
+
+        var time = setInterval(mytimer,1000);
+
+        function mytimer(){
+            var date = new Date();
+            document.getElementById("timer").innerText = date.toTimeString();
+
+            console.log(timer);
+        }
+
+    </script>
+        <p>显示当前时间</p>
+        <p id="timer" ></p>
+</body>
+</html>

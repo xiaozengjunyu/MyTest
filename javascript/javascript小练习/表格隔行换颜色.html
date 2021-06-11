@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+
+    <style>
+        /*设置奇数行颜色*/
+        table tr:nth-child(odd)
+        {
+            background: pink;
+        }
+        
+        /*设置偶数行颜色*/
+        table tr:nth-child(even)
+        {
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" cellspacing="0">
+        <thead>
+            <tr>
+                <th>某仓库货架</th>
+                <th>某仓库货架</th>
+                <th>某仓库货架</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>太阳能</td>
+            <td>空气能</td>
+            <td>电能</td>
+        </tr>
+        <tr>
+            <td>床头闹钟</td>
+            <td>床头闹钟</td>
+            <td>床头闹钟</td>
+        </tr>
+        <tr>
+            <td>太阳能</td>
+            <td>空气能</td>
+            <td>电能</td>
+        </tr>
+        <tr>
+            <td>床头闹钟</td>
+            <td>床头闹钟</td>
+            <td>床头闹钟</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
