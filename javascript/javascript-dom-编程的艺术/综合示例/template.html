@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Document</title>
+  <script src="scripts/global.js" ></script>
+  <link rel="stylesheet" href="styles/basic.css">
+
+  <style>
+
+section,header,article,nav{
+  display: block;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  margin: 1em 10%;
+  /* background-image: url(images/2.jpg); */
+  background-attachment: fixed;
+  background-position: top left;
+  background-repeat: repeat - x;
+  max-width: 80em;
+}
+
+header{
+  border-width: .1em;
+  border-style: solid;
+  border-bottom-width: 0;
+}
+
+header nav {
+  border-width: .1em;
+  border-style: solid;
+  border-bottom-width: 0;
+  border-top-width: 0;
+  padding-left: 25%;
+}
+
+header nav ul{
+  width: 100%;
+  overflow: hidden;
+  border-left-width: .1em;
+  border-left-style: solid;
+}
+
+header nav li {
+  display: inline;
+}
+
+header nav li a {
+  display: block;
+  float: left;
+  padding: .5em 2em;
+  border-right: .1em solid;
+}
+
+
+
+article {
+  border-width: .1em;
+  border-style: solid;
+  border-top-width: 0;
+  padding: 2em 10%;
+  line-height: 1.8em;
+}
+
+article img {
+  border-width: .1em;
+  border-style: solid;
+  outline-width: .1em;
+  outline-style: solid;
+}
+
+  </style>
+
+</head>
+<body>
+  <header>
+    <img src="images/1.jpg" alt="" >
+    <img src="images/2.jpg " width="598px" height="300px"  alt="" style="float: right">
+    <nav>
+      <ul>
+        <li> <a href="index.html" class="here">Home</a> </li>
+        <li> <a href="about.html">About</a> </li>
+        <li> <a href="photos.html">Photos</a> </li>
+        <li> <a href="live.html">Live</a> </li>
+        <li> <a href="contact.html">Contact</a> </li>
+      </ul>
+    </nav>
+  </header>
+  <article>
+    <h1>Lorem Ipsum Dolor</h1>
+    <p id="intro">
+      Ah! Christmas morning! <br>
+       Children like to wake up early while it's still dark and sneak into the living room to check the presentsfind any with their name on it.<br>
+       shake them to guess what's inside.<br>
+        and then maybe they'll go back to bed and pretend they are still asleep when their parents come to wake them with a "Merry Christmas!"<br><br>
+    </p>
+  </article>
+
+</body>
+</html>
